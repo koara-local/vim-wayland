@@ -296,6 +296,7 @@ syn keyword waylandFunction wl_os_epoll_create_cloexec
 syn keyword waylandFunction wl_os_accept_cloexec
 
 " =============================================================================
+so <sfile>:p:h/../../protocol/*.vim
 
 " Default highlighting
 if version >= 508 || !exists("did_c_wayland_syntax_inits")
