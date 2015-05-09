@@ -23,3 +23,5 @@ for e in root.getiterator("interface"):
     print waylandFunction + interface_name + "_" + "destroy"
     for f in e.getiterator("request"):
         print waylandFunction + interface_name + "_" + f.get("name")
+    for f in e.getiterator("event"):
+        print waylandFunction + interface_name + "_send_" + f.get("name")
